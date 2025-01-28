@@ -1,7 +1,50 @@
 body {
-  background-color: #191414;
+  background-color: #000000;
 }
 
-h1 {
-  color: #1DB954;
+.sidebar {
+  width: 300px;
+  padding: 0.75rem;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.sidebar__navigation {
+  padding: 1rem 0 0 1rem;
+  
+  border-radius: 0.5rem;
+  background-color: #121212;
+}
+
+.sidebar__navigation .logo {
+  display: flex;
+  padding: 1rem 0 0 1rem; 
+}
+
+.sidebar__navigation .logo  img {
+  width: 80px;
+}
+
+.sidebar nav ul {
+  margin-top: 1.25rem;
+  padding: 0 1.25rem 0.625rem 1.25rem;
+}
+
+.sidebar nav ul li {
+  padding-block: 0.625rem; 
+}
+
+.sidebar nav ul li a {
+  color: #B3B3B3;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-decoration: none;
+  font-family: "DM Sans", sans-serif;
+}
+
+.sidebar nav ul li a:hover {
+  color: #FFFFFF;
 }
