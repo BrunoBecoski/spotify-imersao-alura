@@ -4,7 +4,7 @@ body {
 
 .sidebar {
   width: 300px;
-  padding: 0.75rem;
+  padding: var(--12px);
 
   position: fixed;
   top: 0;
@@ -12,32 +12,36 @@ body {
   bottom: 0;
 }
 
+.sidebar nav + nav {
+  margin-top: var(--16px);
+}
+
 .sidebar__navigation {
-  padding: 1rem 0 0 1rem;
-  
-  border-radius: 0.5rem;
+  padding: var(--16px) 0 0 var(--16px);
+
+  border-radius: var(--8px);
   background-color: #121212;
 }
 
 .sidebar__navigation .logo {
   display: flex;
-  padding: 1rem 0 0 1rem; 
+  padding: var(--16px) 0 0 var(--16px);
 }
 
 .sidebar__navigation .logo  img {
   width: 80px;
 }
 
-.sidebar nav ul {
-  margin-top: 1.25rem;
-  padding: 0 1.25rem 0.625rem 1.25rem;
+.sidebar__navigation ul {
+  margin-top: var(--20px);
+  padding: 0 var(--20px) var(--10px) var(--20px);
 }
 
-.sidebar nav ul li {
-  padding-block: 0.625rem; 
+.sidebar__navigation ul li {
+  padding-block: var(--10px); 
 }
 
-.sidebar nav ul li a {
+.sidebar__navigation ul li a {
   color: #B3B3B3;
   font-weight: 600;
   font-size: 0.875rem;
@@ -45,6 +49,33 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
-.sidebar nav ul li a:hover {
+.sidebar__navigation ul li a:hover {
+  color: #FFFFFF;
+}
+
+.sidebar__library {
+  padding: var(--16px);
+
+  border-radius: var(--8px);
+  background-color: #121212;
+}
+
+.sidebar__library .add {
+  margin-inline: var(--20px);
+}
+
+.sidebar__library a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: #B3B3B3;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-decoration: none;
+  font-family: "DM Sans", sans-serif;
+}
+
+.sidebar__library a:hover {
   color: #FFFFFF;
 }
