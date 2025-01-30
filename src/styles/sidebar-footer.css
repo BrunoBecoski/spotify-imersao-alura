@@ -1,6 +1,6 @@
 body {
   background-color: var(--black);
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--default-font);
 }
 
 .sidebar {
@@ -19,7 +19,7 @@ body {
 .sidebar__navigation {
   padding: var(--16px) 0 0 var(--16px);
 
-  border-radius: var(--8px);
+  border-radius: 8px;
   background-color: var(--gray-900);
 }
 
@@ -63,7 +63,7 @@ body {
   margin-top: var(--10px);
   padding: var(--4px) var(--8px);
 
-  border-radius: var(--8px);
+  border-radius: 8px;
   background-color: var(--gray-900);
 }
 
@@ -120,7 +120,7 @@ body {
   margin-block: var(--8px);
   padding: var(--16px) var(--20px);
 
-  border-radius: var(--10px);
+  border-radius: 10px;
   font-weight: 600;
   font-size: var(--14px);
   background-color: var(--gray-800);
@@ -158,7 +158,7 @@ body {
   text-transform: none;
   text-decoration: none;
   font-size: var(--12px);
-  border-radius: var(--20px);
+  border-radius: 20px;
   background-color: var(--white);
 }
 
@@ -190,8 +190,8 @@ body {
 
   color: var(--white);
   font-weight: 700;
-  border-radius: var(--20px);
-  border: 2px solid var(--gray-600);
+  border-radius: 20px;
+  border: 2px solid var(--gray-700);
   background-color: transparent;
 }
 
@@ -203,29 +203,35 @@ body {
   margin-right: var(--4px);
 }
 
-.footer {
-  position: absolute;
+.footer__premium {
+  position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
   display: flex;
   justify-content: space-between;
   margin: var(--4px);
-  padding: var(--20px) var(--32px);
+  padding: var(--15px) var(--40px);
 
   background-image: linear-gradient(90deg, rgb(175, 40, 150), rgb(80, 155, 245));
 }
 
-.footer .title {
-  font-weight: 600;
+.footer__premium .text {
+  flex-shrink: 0;
+}
+
+.premium__title {
+  font-weight: 400;
   color: var(--white);
   font-size: var(--12px);
+  margin-bottom: var(--10px);
   text-transform: uppercase;
 }
 
-.footer .subtitle {
+.premium__subtitle {
   color: var(--white);
   font-size: var(--14px);
+  font-weight: 500;
 }
 
 .footer div {
@@ -234,13 +240,14 @@ body {
   gap: var(--8px);
 }
 
-.footer .button {
-  padding: var(--10px) var(--32px);
+.premium__button button {
+  flex-shrink: 0;
+  padding: var(--14px) var(--32px);
   
+  border: 0;
   font-weight: 700;
-  text-transform: none;
   color: var(--black);
-  text-decoration: none;
   font-size: var(--16px);
-  border-radius: var(--20px);
+  border-radius: 40px;
+  background-color: var(--white);
 }
