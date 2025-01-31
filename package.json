@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "api": "json-server --watch src/api/artists.json --port 3000"
+  },
+  "dependencies": {
+    "json-server": "v0.17.0"
+  }
+}

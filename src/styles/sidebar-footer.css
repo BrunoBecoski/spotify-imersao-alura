@@ -4,12 +4,12 @@ body {
 }
 
 .sidebar {
-  width: 300px;
-  padding: var(--12px);
-  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
+  width: 300px;
+  padding: var(--12px);
+  position: fixed;
 }
 
 .sidebar nav + div {
@@ -42,10 +42,10 @@ body {
 }
 
 .sidebar__navigation ul li a {
-  color: var(--gray-500);
   font-weight: 600;
   font-size: 0.875rem;
   text-decoration: none;
+  color: var(--gray-500);
 }
 
 .sidebar__navigation ul li a .fa {
@@ -59,8 +59,8 @@ body {
 .sidebar__library {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   margin-top: var(--10px);
+  justify-content: space-between;
   padding: var(--4px) var(--8px);
 
   border-radius: 8px;
@@ -114,14 +114,14 @@ body {
 
 .section-playlist {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
   gap: var(--20px);
+  align-items: flex-start;
   margin-block: var(--8px);
+  justify-content: space-between;
   padding: var(--16px) var(--20px);
 
-  border-radius: 10px;
   font-weight: 600;
+  border-radius: 10px;
   font-size: var(--14px);
   background-color: var(--gray-800);
 }
@@ -147,18 +147,18 @@ body {
 
 .section-playlist__button {
   display: flex;
-  justify-content: center;
   width: 113px;
   padding: var(--10px);
+  justify-content: center;
   margin-top: var(--12px);
   
   border: 0;
-  color: var(--black);
   font-weight: 700;
+  border-radius: 20px;
   text-transform: none;
   text-decoration: none;
+  color: var(--black);
   font-size: var(--12px);
-  border-radius: 20px;
   background-color: var(--white);
 }
 
@@ -171,10 +171,10 @@ body {
 }
 
 .sidebar__library .cookies a {
-  color: var(--gray-500);
   font-weight: 500;
-  font-size: var(--10px);
   text-decoration: none;
+  font-size: var(--10px);
+  color: var(--gray-500);
 }
 
 .sidebar__library .cookies a:hover {
@@ -188,11 +188,11 @@ body {
   padding: var(--8px);
   align-items: center;
 
-  color: var(--white);
   font-weight: 700;
   border-radius: 20px;
-  border: 2px solid var(--gray-700);
+  color: var(--white);
   background-color: transparent;
+  border: 2px solid var(--gray-700);
 }
 
 .sidebar__library .languages__button:hover {
@@ -204,13 +204,13 @@ body {
 }
 
 .footer__premium {
-  position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
   display: flex;
-  justify-content: space-between;
+  position: fixed;
   margin: var(--4px);
+  justify-content: space-between;
   padding: var(--15px) var(--40px);
 
   background-image: linear-gradient(90deg, rgb(175, 40, 150), rgb(80, 155, 245));
@@ -224,20 +224,20 @@ body {
   font-weight: 400;
   color: var(--white);
   font-size: var(--12px);
-  margin-bottom: var(--10px);
   text-transform: uppercase;
+  margin-bottom: var(--10px);
 }
 
 .premium__subtitle {
+  font-weight: 500;
   color: var(--white);
   font-size: var(--14px);
-  font-weight: 500;
 }
 
 .footer div {
   display: flex;
-  flex-direction: column;
   gap: var(--8px);
+  flex-direction: column;
 }
 
 .premium__button button {
@@ -246,8 +246,8 @@ body {
   
   border: 0;
   font-weight: 700;
+  border-radius: 40px;
   color: var(--black);
   font-size: var(--16px);
-  border-radius: 40px;
   background-color: var(--white);
 }
