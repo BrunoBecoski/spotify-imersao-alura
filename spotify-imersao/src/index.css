@@ -1,0 +1,35 @@
+:root {
+  --default-font: "DM Sans", sans-serif;
+
+  --4px: 0.25rem;
+  --8px: 0.5rem;
+  --10px: 0.625rem;
+  --12px: 0.75rem;
+  --14px: 0.875rem;
+  --15px: 0.9375rem;
+  --16px: 1rem;
+  --18px: 1.125rem;
+  --20px: 1.25rem;
+  --24px: 1.5rem;
+  --25px: 1.5625rem;
+  --30px: 1.875rem;
+  --32px: 2rem;
+  --40px: 2.5rem;
+  --48px: 3rem;
+
+  --white: #FFFFFF;
+  --black: #000000;
+  --green: #1DB954;
+
+  --gray-500: #B3B3B3;
+  --gray-600: #A7A7A7;
+  --gray-700: #878787;
+  --gray-750: #6A6A6A;
+  --gray-800: #242424;
+  --gray-850: #252525;
+  --gray-900: #121212;
+  --gray-950: #181818;
+
+  --bg-icon: #131313;
+  --bg-icon-opacity: rgba(0, 0, 0, 7)
+}
