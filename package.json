@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "api": "json-server --watch src/api/artists.json --port 3000"
+    "api-artists": "json-server --watch src/api/artists.json --port 3000",
+    "api-podcasts": "json-server --watch src/api/podcasts.json --port 3000"
   },
   "dependencies": {
     "json-server": "v0.17.0"

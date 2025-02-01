@@ -1,0 +1,11 @@
+{
+  "podcasts": [
+    { "id": 1, "name": "Xadrez Verbal", "genre": "Política", "urlImg": "https://i.scdn.co/image/ab67656300005f1f915ce37df5ec35c5cc493683" },
+    { "id": 2, "name": "História FM", "genre": "História", "urlImg": "https://i.scdn.co/image/ab67656300005f1f3c2d65580228f41be8744df4" },
+    { "id": 3, "name": "ASSIM FALOU TINÔCO", "genre": "Filosofia", "urlImg": "https://i.scdn.co/image/ab67656300005f1fce84c43b4eee90665a5cbb25" },
+    { "id": 4, "name": "PeeWeeCast", "genre": "Cultura", "urlImg": "https://i.scdn.co/image/ab67656300005f1f8b921903f77acc57b1183225" },
+    { "id": 5, "name": "Colunas de Hércules", "genre": "História", "urlImg": "https://i.scdn.co/image/ab67656300005f1f44e388c4b627fb3c4c0c340e" },
+    { "id": 6, "name": "Você Não Precisa Saber", "genre": "Humor", "urlImg": "https://i.scdn.co/image/ab67656300005f1fe3827eb198f15ac94a96ba06" },
+    { "id": 7, "name": "Valdir", "genre": "Humor", "urlImg": "https://i.scdn.co/image/ab67656300005f1f297c46852826013ec7e6429d" }
+  ]
+}
