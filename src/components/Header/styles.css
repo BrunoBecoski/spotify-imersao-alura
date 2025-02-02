@@ -5,8 +5,9 @@
   padding: var(--16px);
   justify-content: space-between;
 
-  border-radius: 8px;
+  margin-left: 330px;
 
+  border-radius: 8px;
   background-color: var(--gray-900);
 }
 

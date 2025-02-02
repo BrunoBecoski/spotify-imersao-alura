@@ -4,108 +4,6 @@
   margin-inline: 320px 56px;
 }
 
-.header__navigation {
-  display: flex;
-  align-items: center;
-  margin: var(--10px);
-  padding: var(--16px);
-  justify-content: space-between;
-
-  border-radius: 8px;
-  background-color: var(--gray-900);
-}
-
-.header__navigation .navigation {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.navigation .arrow-left {
-  margin-right: var(--20px);
-}
-
-.arrow-left, .arrow-right {
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border: none;
-  border-radius: 50%;
-  color: var(--white);
-  background: var(--bg-icon);
-  background-color: var(--bg-icon-opacity);
-}
-
-.arrow-right {
-  color: var(--gray-500)
-}
-
-.arrow-left:hover, .arrow-right:hover {
-  opacity: .7;
-}
-
-.header__login {
-  display: flex;
-  align-items: center;
-}
-
-.header__search {
-  display: flex;
-  width: 364px;
-  height: 48px;
-  align-items: center;
-  margin-left: var(--8px);
-
-  border-radius: 500px;
-  border: 1px solid transparent;
-  background-color: var(--gray-800);
-}
-
-.header__search span {
-  font-size: var(--16px);
-  color: var(--gray-500);
-  margin-left: var(--16px);
-}
-
-.header__search input {
-  overflow: hidden;
-  white-space: nowrap;
-  padding: var(--12px);
-  text-overflow: ellipsis;
-
-  border: none;
-  outline: none;
-  color: var(--white);
-  background: transparent;
-}
-
-.header__login .subscribe {
-  margin-right: var(--32px);
-
-  font-weight: 700;
-  font-size: var(--16px);
-  color: var(--gray-600);
-  background-color: transparent;
-}
-
-.header__login .subscribe:hover {
-  color: var(--white)
-}
-
-.header__login .login {
-  width: 100px;
-  height: 48px;
-
-  font-weight: 700;
-  border-radius: 40px;
-  color: var(--black);
-  font-size: var(--16px);
-  margin-right: var(--32px);
-}
-
 .playlist-container {
   margin: var(--10px);
   padding-top: var(--16px);
@@ -309,3 +207,9 @@
 .card13 { background: rgb(186, 93, 7) }
 .card14 { background: rgb(0, 30, 80) }
 .card15 { background: rgb(60, 30, 80)}
+
+@media screen and (max-width: 1015px) {
+  .offer__list-item {
+    grid-template-columns: 1fr 1fr;
+  }
+}
