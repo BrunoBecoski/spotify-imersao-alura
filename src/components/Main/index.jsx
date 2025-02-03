@@ -1,4 +1,7 @@
-import "./styles.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
+
+import "./styles.css";
 
 const Main = () => {
   return (
@@ -131,7 +134,7 @@ const Main = () => {
                 <div className="card-img">
                   <img id="artist-img" className="artist-img" />
                   <div className="play">
-                    <span className="fa fa-play"></span>
+                    <FontAwesomeIcon icon={faPlay} className="icon-play" />
                   </div>
                 </div>
                 <div className="card-text">

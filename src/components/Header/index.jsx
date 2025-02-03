@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronLeft, faChevronRight, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 import "./styles.css";
 
@@ -47,16 +49,16 @@ const Header = () => {
     <nav className="header__navigation">
       <div className="navigation">
         <button className="arrow-left">
-          <span className="fa fa-chevron-left"></span>
+          <FontAwesomeIcon icon={faChevronLeft} />
         </button>
 
         <button className="arrow-right">
-          <span className="fa fa-chevron-right"></span>
+          <FontAwesomeIcon icon={faChevronRight} />
         </button>
       </div>
 
       <div className="header__search">
-        <span className="fa fa-search"></span>
+        <FontAwesomeIcon icon={faMagnifyingGlass} className="icon-search" />
 
         <input id="search-input" maxLength="50" placeholder="O que você quer ouvir?" onChange={(event) => setSearch(event.target.value)} />
       </div>

@@ -164,7 +164,7 @@
   position: relative;
 }
 
-.play .fa-play {
+.play .icon-play {
   top: 120px;
   right: 10px;
   position: absolute;
@@ -177,12 +177,12 @@
   background-color: var(--green);
 }
 
-.artist-card:hover .play .fa-play {
+.artist-card:hover .play .icon-play {
   opacity: 1;
   transform: translateY(-20px);
 }
 
-.play .fa-play:hover {
+.play .icon-play:hover {
   padding: var(--20px);
   
   cursor: pointer;

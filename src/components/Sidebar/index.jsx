@@ -1,3 +1,12 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { 
+  faBook,
+  faGlobe,
+  faHome,
+  faMagnifyingGlass,
+  faPlus
+} from "@fortawesome/free-solid-svg-icons";
+
 import "./styles.css";
 
 const Sidebar = () => {
@@ -13,14 +22,14 @@ const Sidebar = () => {
         <ul>
           <li>
             <a href="#">
-              <span className="fa fa-home"></span>
+              <FontAwesomeIcon icon={faHome} className="icon-home" />
               <span>Início</span>
             </a>
           </li>
 
           <li>
             <a href="#">
-              <span className="fa fa-search"></span>
+              <FontAwesomeIcon icon={faMagnifyingGlass} className="icon-search" />
               <span>Buscar</span>
             </a> 
           </li>
@@ -30,11 +39,11 @@ const Sidebar = () => {
       <div className="sidebar__library">
         <div className="library__content"> 
           <button className="library__button">
-            <span className="fa fa-book"></span>
+            <FontAwesomeIcon icon={faBook} className="icon-library" />
             <span>Sua biblioteca</span>
           </button>
 
-          <span className="fa fa-plus"></span>
+          <FontAwesomeIcon icon={faPlus} className="icon-plus" />
         </div>
 
         <section className="section-playlist">
@@ -54,7 +63,7 @@ const Sidebar = () => {
 
         <div className="languages">
           <button className="languages__button">
-            <span className="fa fa-globe"></span>
+            <FontAwesomeIcon icon={faGlobe} className="icon-globe" />
             <span>Português do Brasil</span>
           </button>
         </div>
