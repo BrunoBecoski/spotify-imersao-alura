@@ -1,11 +1,15 @@
+.header-grid {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
 .header__navigation {
   display: flex;
   align-items: center;
-  margin: var(--10px);
   padding: var(--16px);
   justify-content: space-between;
-
-  margin-left: 330px;
 
   border-radius: 8px;
   background-color: var(--gray-900);

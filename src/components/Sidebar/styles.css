@@ -1,14 +1,16 @@
+.sidebar-grid {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
 .sidebar {
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 300px;
-  padding: var(--12px);
-  position: fixed;
+  position: sticky;
 }
 
 .sidebar nav + div {
-  margin-top: var(--16px);
+  margin-top: var(--24px);
 }
 
 .sidebar__navigation {

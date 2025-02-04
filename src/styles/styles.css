@@ -1,4 +1,18 @@
-body {
-  background-color: var(--black);
+.app {
   font-family: var(--default-font);
+  padding: var(--10px);
+
+  display: grid;
+  gap: var(--24px);
+  grid-template-rows: 80px calc(1fr - var(--20px));
+  grid-template-columns: 300px calc(1fr - var(2opx) - var(--24px));
+}
+
+.header-gird {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  background-color: gold;
 }

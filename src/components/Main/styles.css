@@ -1,11 +1,11 @@
-.main-container {
-  height: 100vh;
-  max-width: 80vw;
-  margin-inline: 320px 56px;
+.main-grid {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
 }
 
 .playlist-container {
-  margin: var(--10px);
   padding-top: var(--16px);
 
   border-radius: 10px;

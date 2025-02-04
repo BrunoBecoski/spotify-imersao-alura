@@ -46,7 +46,7 @@ const Header = () => {
   }
 
   return (
-    <nav className="header__navigation">
+    <nav className="header__navigation header-grid">
       <div className="navigation">
         <button className="arrow-left">
           <FontAwesomeIcon icon={faChevronLeft} />

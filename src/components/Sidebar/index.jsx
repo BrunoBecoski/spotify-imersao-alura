@@ -11,7 +11,7 @@ import "./styles.css";
 
 const Sidebar = () => {
   return (
-    <div className="sidebar">
+    <div className="sidebar sidebar-grid">
       <nav className="sidebar__navigation">
         <div className="navigation__logo">
           <a href="#">
