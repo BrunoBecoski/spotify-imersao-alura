@@ -164,6 +164,24 @@
   opacity: .8;
 }
 
+.sidebar__library .bottom-links {
+  text-decoration: none;
+  margin: var(--25px) var(--20px);
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sidebar__library .bottom-links a {
+  font-weight: 500;
+  text-decoration: none;
+  font-size: var(--10px);
+  color: var(--gray-500);
+  margin-right: var(--16px);
+  margin-block: var(--8px);
+}
+
+
 .sidebar__library .cookies {
   margin: var(--25px) var(--20px);
 }
@@ -172,7 +190,7 @@
   font-weight: 500;
   text-decoration: none;
   font-size: var(--10px);
-  color: var(--gray-500);
+  color: var(--white);
 }
 
 .sidebar__library .cookies a:hover {

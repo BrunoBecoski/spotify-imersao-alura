@@ -57,6 +57,25 @@ const Sidebar = () => {
           </div>
         </section>
 
+        <section className="section-playlist">
+          <div className="section-playlist__content">
+            <span className="text title">Que tal seguir uma podcast novo?</span>
+            <span className="text subtitle">Avisaremos você sobre novos epsisódios.</span>
+
+            <button className="section-playlist__button">
+              <span>Explore podcasts</span>
+            </button>
+          </div>
+        </section>
+
+        <div className="bottom-links">
+          <a href="#">Legal</a>
+          <a href="#">Segurança e Centro de privacidade</a>
+          <a href="#">Política de privacidade</a>
+          <a href="#">Sobre anúncios</a>
+          <a href="#">Acessibilidade</a>
+        </div>
+          
         <div className="cookies">
           <a href="#">Cookies</a>
         </div>
