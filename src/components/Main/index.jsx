@@ -5,7 +5,7 @@ import "./styles.css";
 
 const Main = () => {
   return (
-    <main className="main-grid">
+    <main id="main">
       <div className="playlist-container">
         <div id="result-playlists">
           <div className="playlist">
