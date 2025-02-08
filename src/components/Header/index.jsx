@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronLeft, faChevronRight, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faDownload, faFolderOpen, faHome, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faSpotify } from "@fortawesome/free-brands-svg-icons";
 
 import "./styles.css";
 
@@ -47,25 +48,46 @@ const Header = () => {
 
   return (
     <nav id="header" className="header__navigation">
-      <div className="navigation">
-        <button className="arrow-left">
-          <FontAwesomeIcon icon={faChevronLeft} />
-        </button>
+      <div className="search">
+        <a className="spotify" href="#">
+          <FontAwesomeIcon icon={faSpotify} />
+        </a>
+        
+        <div className="home-search">
+          <button className="home">
+            <FontAwesomeIcon icon={faHome} className="icon-home" />
+          </button>
 
-        <button className="arrow-right">
-          <FontAwesomeIcon icon={faChevronRight} />
-        </button>
+          <div className="header__search">
+            <FontAwesomeIcon icon={faMagnifyingGlass} className="icon-search" />
+
+            <input id="search-input" maxLength="50" placeholder="O que você quer ouvir?" onChange={(event) => setSearch(event.target.value)} />
+
+            <button className="browse">
+              <FontAwesomeIcon icon={faFolderOpen} />
+            </button>
+          </div>
+        </div>
       </div>
 
-      <div className="header__search">
-        <FontAwesomeIcon icon={faMagnifyingGlass} className="icon-search" />
+      <div className="header__buttons">
+        <div className="buttons-info">
+          <button>Premium</button>
+          <button>Suporte</button>
+          <button>Baixar</button>
+        </div>
 
-        <input id="search-input" maxLength="50" placeholder="O que você quer ouvir?" onChange={(event) => setSearch(event.target.value)} />
-      </div>
+        <div className="separator" />
 
-      <div className="header__login">
-        <button className="subscribe">Inscreva-se</button>
-        <button className="login">Entrar</button>
+        <button className="download">
+          <FontAwesomeIcon icon={faDownload} />
+          Instalar aplicativo
+        </button>
+
+        <div className="header__login">
+          <button className="subscribe">Inscreva-se</button>
+          <button className="login">Entrar</button>
+        </div>
       </div>
     </nav>
   )
