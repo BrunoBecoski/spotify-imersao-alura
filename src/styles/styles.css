@@ -1,7 +1,7 @@
 .app {
-  width: 100vw;
-  height: 100vh;
-  padding: var(--10px);
+  height: 97vh;
+  margin: var(--10px);
+  overflow: hidden;
   
   font-family: var(--default-font);
   
@@ -10,10 +10,10 @@
   grid-template-columns: 420px 1fr;
   grid-template-rows: 64px 1fr 64px;
   grid-template-areas: 
-  "header header"
+    "header header"
     "sidebar main"
     "footer footer"
-    ;
+  ;
 }
 .app #header {
   grid-area: header;

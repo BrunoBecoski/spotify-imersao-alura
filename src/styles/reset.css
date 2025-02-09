@@ -85,6 +85,7 @@ video {
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
+  box-sizing: border-box;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -100,12 +101,14 @@ menu,
 nav,
 section {
   display: block;
+  box-sizing: border-box;
 }
 
 body {
   line-height: 1;
-  background: #000;
-  font-family: var(--font-dm-sans);
+  box-sizing: border-box;
+  background: var(--black);
+  font-family: var(--default-font);
 }
 
 ol,
@@ -134,4 +137,5 @@ table {
 button {
   border: none;
   cursor: pointer;
+  box-sizing: border-box;
 }
