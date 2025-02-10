@@ -20,7 +20,7 @@ const Sidebar = () => {
           <FontAwesomeIcon icon={faPlus} className="icon-plus" />
         </div>
 
-        <div className="scroll">
+        <div className="scroll-section">
           <section className="section-playlist">
             <div className="section-playlist__content">
               <span className="text title">Crie a sua primeira playlist</span>

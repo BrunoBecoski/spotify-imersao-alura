@@ -6,7 +6,7 @@
   font-family: var(--default-font);
   
   display: grid;
-  gap: var(--24px);
+  gap: var(--8px);
   grid-template-columns: 420px 1fr;
   grid-template-rows: 64px 1fr 64px;
   grid-template-areas: 
