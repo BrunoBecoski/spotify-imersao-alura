@@ -86,7 +86,9 @@ const Header = () => {
 
         <div className="header__login">
           <button className="subscribe">Inscreva-se</button>
-          <button className="login">Entrar</button>
+          <button className="login">
+            <span>Entrar</span>
+          </button>
         </div>
       </div>
     </nav>

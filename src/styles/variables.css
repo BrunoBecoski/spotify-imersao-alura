@@ -31,5 +31,7 @@
   --gray-950: #181818;
 
   --bg-icon: #131313;
-  --bg-icon-opacity: rgba(0, 0, 0, 7)
+  --bg-icon-opacity: rgba(0, 0, 0, 7);
+
+  --scale: scale(1.04);
 }
