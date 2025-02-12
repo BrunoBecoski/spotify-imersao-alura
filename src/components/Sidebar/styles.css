@@ -15,6 +15,10 @@
 
 .scroll-section {
   overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:var(--20px);
 }
 
 .scroll-section::-webkit-scrollbar {
@@ -29,13 +33,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: var(--12px) var(--16px) var(--8px);
 }
 
 .library__button {
   display: flex;
   align-items: center;
-  margin-right: var(--10px);
-  padding: var(--20px) var(--10px);
   
   border: 0;
   color: var(--gray-500);
@@ -61,18 +64,23 @@
   color: var(--white);
 }
 
-.library__content .icon-plus {
-  margin: var(--24px) var(--10px);
-  background-color: none;
-
+.library__plus {
+  padding: var(--8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  border-radius: 50%;
+  font-size: var(--16px);
   color: var(--gray-500);
-  cursor: pointer;
+  background-color: var(--gray-900);
+
+  transition: all .2s;
 }
 
-.library__content .icon-plus:hover {
+.library__plus:hover {
   color: var(--white);
   background-color: var(--gray-800);
-  box-shadow: 0 0 32px var(--gray-500);
 }
 
 .section-playlist {
@@ -127,11 +135,10 @@
 }
 
 .section-playlist__button:hover {
-  transform: scale(1.1);
+  transform: var(--scale);
 }
 
 .sidebar__library .bottom-links {
-  text-decoration: none;
   margin-top: var(--32px);
   margin-inline: var(--20px);
   margin-bottom: var(--8px);
@@ -148,7 +155,6 @@
   margin-right: var(--16px);
   margin-block: var(--8px);
 }
-
 
 .sidebar__library .cookies {
   margin-inline: var(--20px);
@@ -177,14 +183,14 @@
   border-radius: 20px;
   color: var(--white);
   background-color: transparent;
-  border: 2px solid var(--gray-700);
+  border: 1px solid var(--gray-700);
 
   transition: all .2s;
 }
 
 .sidebar__library .languages__button:hover {
   border-color: var(--white);
-  transform: scale(1.1);
+  transform: var(--scale);
 }
 
 .sidebar__library .languages__button .icon-globe {

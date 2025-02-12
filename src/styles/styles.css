@@ -8,7 +8,7 @@
 
   display: grid;
   gap: var(--8px);
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 420px 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas: 
     "header header"

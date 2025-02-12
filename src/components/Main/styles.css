@@ -232,7 +232,7 @@
 }
 
 .footer__links-social .links-items .title {
-  margin-bottom: var(--8px);
+  margin-bottom: var(--16px);
 
   font-weight: 700;
   color: var(--white);
