@@ -48,21 +48,13 @@
 }
 
 .browse {
-  background-color: transparent;
-  color: var(--gray-500);
-  margin-right: var(--12px);
-  font-size: var(--24px);
-}
+  padding-inline: var(--12px) var(--4px);
 
-.browse::before {
-  content: '';
-  display: inline-block;
-  align-items: center;
-  margin-right: 15px;
-  width: 1px;
-  height: 24px;
-  vertical-align: text-top;
-  background-color: var(--gray-500);
+  color: var(--gray-500);
+  font-size: var(--24px);
+  margin-right: var(--12px);
+  background-color: transparent;
+  border-left: 1px solid var(--gray-500);
 }
 
 .header__buttons {
@@ -135,7 +127,6 @@
   white-space: nowrap;
   padding: var(--12px);
   text-overflow: ellipsis;
-
 
   border: none;
   outline: none;

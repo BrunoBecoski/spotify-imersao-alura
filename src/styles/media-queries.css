@@ -6,11 +6,23 @@
   .offer__list-item {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
+  .sidebar {
+    width: 380px;
+  }
 }
 
 @media screen and (max-width: 1430px) {
   .offer__list-item {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .header__buttons .buttons-info {
+    display: none;
+  }
+
+  .header__buttons .separator {
+    display: none;
   }
 }
 
@@ -18,10 +30,19 @@
   .offer__list-item {
     grid-template-columns: 1fr 1fr;
   }
+
+  .header__buttons .download {
+    display: none;
+  }
+
+  .header__search input {
+    width: auto;
+
+  }
 }
 
 @media screen and (max-width: 950px) {
-  .offer__list-item {
-    grid-template-columns: 1fr;
+  .sidebar {
+    width: 280px;
   }
 }

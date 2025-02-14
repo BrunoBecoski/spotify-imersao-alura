@@ -7,10 +7,6 @@
   background-image: linear-gradient(90deg, rgb(175, 40, 150), rgb(80, 155, 245));
 }
 
-.footer__premium .text {
-  flex-shrink: 0;
-}
-
 .premium__title {
   margin-bottom: var(--4px);
   
@@ -23,6 +19,7 @@
   font-weight: 400;
   color: var(--white);
   font-size: var(--16px);
+  text-wrap: wrap;
 }
 
 .footer div {
