@@ -4,13 +4,13 @@ import { faFacebook, faInstagram, faTwitter } from "@fortawesome/free-brands-svg
 
 import "./styles.css";
 
-const Main = () => {
+const Main = ({ playlistsRef, artistRef, containerRef, cardRef }) => {
   return (
     <main id="main">
       <div className="scroll-playlist">
         
         <div className="playlist-container">
-          <div id="result-playlists">
+          <div id="result-playlists" ref={playlistsRef}>
             <div className="playlist">
               <h1 id="greeting">Boas vindas</h1>
               <h2 className="session">Navegar por todas as seções</h2>
@@ -130,20 +130,21 @@ const Main = () => {
             </div>
           </div>
 
-          <div id="result-artist" className="hidden">
-            <div className="grid-container">
-              <div className="artist-card">
-                <div className="card-img">
-                  <img id="artist-img" className="artist-img" />
-                  <div className="play">
-                    <FontAwesomeIcon icon={faPlay} className="icon-play" />
-                  </div>
+          <div id="result-artist" ref={artistRef} className="hidden">
+            <div className="grid-container" ref={containerRef}>
+            </div>
+          
+            <div className="artist-card hidden" ref={cardRef}>
+              <div className="card-img">
+                <img id="artist-img" className="artist-img" />
+                <div className="play">
+                  <FontAwesomeIcon icon={faPlay} className="icon-play" />
                 </div>
-                <div className="card-text">
-                  <a title="Foo Fighters" className="vst" href="#"></a>
-                  <span className="artist-name " id="artist-name"></span>
-                  <span className="artist-category">Artista</span>
-                </div>
+              </div>
+              <div className="card-text">
+                <a title="Foo Fighters" className="vst" href="#"></a>
+                <span className="artist-name" id="artist-name"></span>
+                <span className="artist-category">Artista</span>
               </div>
             </div>
           </div>
