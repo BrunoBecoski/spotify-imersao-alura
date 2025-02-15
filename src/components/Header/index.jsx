@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload, faFolderOpen, faHome, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faDownload, faFolderOpen, faHome, faMagnifyingGlass, faX } from "@fortawesome/free-solid-svg-icons";
 import { faSpotify } from "@fortawesome/free-brands-svg-icons";
 
 import "./styles.css";
@@ -7,25 +7,29 @@ import "./styles.css";
 const Header = ({ search, setSearch }) => {
   return (
     <nav id="header" className="header__navigation">
-      <div className="search">
-        <a className="spotify" href="#">
-          <FontAwesomeIcon icon={faSpotify} />
-        </a>
+      <a className="spotify" href="#">
+        <FontAwesomeIcon icon={faSpotify} />
+      </a>
+
+      <div className="header__search">
+        <button className="search-home">
+          <FontAwesomeIcon icon={faHome} className="icon-home" />
+        </button>
         
-        <div className="home-search">
-          <button className="home">
-            <FontAwesomeIcon icon={faHome} className="icon-home" />
-          </button>
+        <div className="search">  
+          <FontAwesomeIcon icon={faMagnifyingGlass} className="icon-search" />
 
-          <div className="header__search">
-            <FontAwesomeIcon icon={faMagnifyingGlass} className="icon-search" />
+          <input id="search-input" maxLength="50" placeholder="O que você quer ouvir?" value={search} onChange={(event) => setSearch(event.target.value)} />
 
-            <input id="search-input" maxLength="50" placeholder="O que você quer ouvir?" value={search} onChange={(event) => setSearch(event.target.value)} />
-
-            <button className="browse">
-              <FontAwesomeIcon icon={faFolderOpen} />
-            </button>
-          </div>
+          { search ? 
+              <button className="search-browse">
+                <FontAwesomeIcon icon={faX}  title="Limpar campo de pesquisa" onClick={() => setSearch('')}/>
+              </button>
+            :
+              <button className="search-browse">
+                <FontAwesomeIcon icon={faFolderOpen} />
+              </button>
+          }
         </div>
       </div>
 

@@ -1,0 +1,18 @@
+{
+  "artists-podcasts": [
+    { "id": 1, "category": "Artista", "name": "Foo Fighters", "genre": "Rock", "urlImg": "https://i.scdn.co/image/ab67616100005174c884df599abc793c116cdf15" },
+    { "id": 2, "category": "Artista", "name": "Michael Jackson", "genre": "Pop", "urlImg": "https://i.scdn.co/image/ab676161000051740e08ea2c4d6789fbf5cbe0aa" },
+    { "id": 3, "category": "Artista", "name": "Emicida", "genre": "Hip Hop", "urlImg": "https://i.scdn.co/image/ab67616100005174908b4b4bc90e1518b68b4068" },
+    { "id": 4, "category": "Artista", "name": "Chitãozinho e Xororó", "genre": "Sertanejo", "urlImg": "https://i.scdn.co/image/ab676161000051744606c59411c57f7b49588be4" },
+    { "id": 5, "category": "Artista", "name": "Mc Coringa", "genre": "Funk", "urlImg": "https://i.scdn.co/image/ab67616d00001e02fe8f6dd361ad0f12b88c7f56" },
+    { "id": 6, "category": "Artista", "name": "Arlindo Cruz", "genre": "Samba", "urlImg": "https://i.scdn.co/image/ab67616100005174181873f93056642d7b340839" },
+    { "id": 7, "category": "Artista", "name": "Caetano Veloso", "genre": "MPB", "urlImg": "https://i.scdn.co/image/ab67616100005174e98de50f36cf1aa4bf047757" },
+    { "id": 8, "category": "Podcast", "name": "Xadrez Verbal", "genre": "Política", "urlImg": "https://i.scdn.co/image/ab67656300005f1f915ce37df5ec35c5cc493683" },
+    { "id": 9, "category": "Podcast", "name": "História FM", "genre": "História", "urlImg": "https://i.scdn.co/image/ab67656300005f1f3c2d65580228f41be8744df4" },
+    { "id": 10, "category": "Podcast", "name": "ASSIM FALOU TINÔCO", "genre": "Filosofia", "urlImg": "https://i.scdn.co/image/ab67656300005f1fce84c43b4eee90665a5cbb25" },
+    { "id": 11, "category": "Podcast", "name": "PeeWeeCast", "genre": "Cultura", "urlImg": "https://i.scdn.co/image/ab67656300005f1f8b921903f77acc57b1183225" },
+    { "id": 12, "category": "Podcast", "name": "Colunas de Hércules", "genre": "História", "urlImg": "https://i.scdn.co/image/ab67656300005f1f44e388c4b627fb3c4c0c340e" },
+    { "id": 13, "category": "Podcast", "name": "Você Não Precisa Saber", "genre": "Humor", "urlImg": "https://i.scdn.co/image/ab67656300005f1fe3827eb198f15ac94a96ba06" },
+    { "id": 14, "category": "Podcast", "name": "Valdir", "genre": "Humor", "urlImg": "https://i.scdn.co/image/ab67656300005f1f297c46852826013ec7e6429d" }
+  ]
+}

@@ -8,8 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "api-artists": "json-server --watch src/api/artists.json --port 3000",
-    "api-podcasts": "json-server --watch src/api/podcasts.json --port 3000"
+    "api": "json-server --watch src/api/artists-podcasts.json --port 3000"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",

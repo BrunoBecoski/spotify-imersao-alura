@@ -10,28 +10,21 @@
   justify-content: space-around;
 }
 
-.search {
-  display: flex;
-  align-items: center;
-}
-
-.home-search {
-  display: flex;
-  gap: var(--4px);
-  align-items: center;
-}
-
-.header__search:focus-within {
-  border: 2px solid var(--white);
-}
-
 .spotify {
   margin: var(--24px);
   color: var(--white);
   font-size: var(--32px);
 }
 
-.home {
+.header__search {
+  display: flex;
+  gap: var(--4px);
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.search-home {
   color: var(--white);
   font-size: var(--24px);
   background-color: transparent;
@@ -39,15 +32,52 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
-
   background-color: var(--gray-800);
 }
 
-.home:hover {
+.search-home:hover {
   background-color: var(--gray-700);
 }
 
-.browse {
+.search {
+  display: flex;
+  padding-block: var(--4px);
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 480px;
+  min-width: 270px;
+  width: 100%;
+
+  border-radius: 500px;
+  border: 1px solid transparent;
+  background-color: var(--gray-800);
+}
+
+.search:focus-within {
+  border: 2px solid var(--white);
+}
+
+.icon-search {
+  font-size: var(--16px);
+  color: var(--gray-500);
+  margin-left: var(--16px);
+}
+
+.search input {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: var(--12px);
+  text-overflow: ellipsis;
+  width: 100%;
+
+  border: none;
+  outline: none;
+  color: var(--white);
+  background: transparent;
+}
+
+.search-browse {
   padding-inline: var(--12px) var(--4px);
 
   color: var(--gray-500);
@@ -57,12 +87,15 @@
   border-left: 1px solid var(--gray-500);
 }
 
+.search-browse:hover {
+  color: var(--white);
+}
+
 .header__buttons {
   display: flex;
   align-items: center;
   gap: var(--16px);
 }
-
 
 .buttons-info button {
   background-color: transparent;
@@ -104,34 +137,6 @@
   display: flex;
   align-items: center;
   gap: var(--4px);
-}
-
-.header__search {
-  display: flex;
-  padding-block: var(--4px);
-  align-items: center;
-
-  border-radius: 500px;
-  border: 1px solid transparent;
-  background-color: var(--gray-800);
-}
-
-.header__search .icon-search {
-  font-size: var(--16px);
-  color: var(--gray-500);
-  margin-left: var(--16px);
-}
-
-.header__search input {
-  overflow: hidden;
-  white-space: nowrap;
-  padding: var(--12px);
-  text-overflow: ellipsis;
-
-  border: none;
-  outline: none;
-  color: var(--white);
-  background: transparent;
 }
 
 .header__login .subscribe {

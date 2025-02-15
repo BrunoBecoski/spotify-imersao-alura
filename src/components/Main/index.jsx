@@ -144,7 +144,7 @@ const Main = ({ playlistsRef, artistRef, containerRef, cardRef }) => {
               <div className="card-text">
                 <a title="Foo Fighters" className="vst" href="#"></a>
                 <span className="artist-name" id="artist-name"></span>
-                <span className="artist-category">Artista</span>
+                <span className="artist-category"></span>
               </div>
             </div>
           </div>

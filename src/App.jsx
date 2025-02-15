@@ -29,7 +29,7 @@ function App() {
 
 
   function requestApi(searchTerm) {
-    const url = `http://localhost:3000/podcasts?name_like=${searchTerm}`
+    const url = `http://localhost:3000/artists-podcasts?name_like=${searchTerm}`
 
     fetch(url)
       .then((response) => response.json())
@@ -47,8 +47,9 @@ function App() {
     result.forEach(element => {
       const clone = card.cloneNode(true)
       
-      clone.querySelectorAll("span.artist-name")[0].innerText = element.name
       clone.querySelectorAll("img")[0].src = element.urlImg
+      clone.querySelectorAll("span.artist-name")[0].innerText = element.name
+      clone.querySelectorAll("span.artist-category")[0].innerText = element.category
       
       containerRef.current.appendChild(clone)
     });
